@@ -1,0 +1,398 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+   
+
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(84, 81, 81, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    z-index: 1000;
+
+    display: inline-block;
+    
+   
+    background: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+    text-decoration: none;
+   
+   
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+
+    padding: 10px 20px;
+     
+  
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+nav a:hover {
+   box-shadow:0 0 15px 5px rgba(144, 247, 208, 0.912);
+}
+
+
+section {
+    padding: 100px 20px;
+    margin-top: 60px; 
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    color: #59e0aa;
+}
+.content h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 400%;
+    margin-bottom: 70%;
+    background: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -67%;
+    color: whitesmoke
+}
+
+
+
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+   
+.image-container {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+    
+}
+
+.image-container img {
+    max-width: 900%;
+    height: auto;
+    max-height: 800px;
+    width: 100%;
+    border-radius: 100px;
+}
+
+
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cert-box {
+    display: grid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: 
+    
+    #1d1d1f
+    
+    
+}
+
+.cert-box:hover {
+    box-shadow: 0 0 15px 5px rgb(48, 69, 231);
+}
+
+.cert-header {
+   
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.cert-header img {
+    width : 100%;
+    border-radius : 5px;
+}
+
+.cert-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #888;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cert-button:hover {
+    background-color: #59e0aa;
+}
+
+
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+   
+}
+
+@media (max-width: 768px) {
+    .landing-page {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .image-container {
+        text-align: center;
+    }
+    .c {
+        font-size: 2.2rem; /* Slightly smaller for mobile */
+    }
+    
+    .in {
+        font-size: 1.5rem;
+    }
+
+    .aca {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    #academia .c {
+        font-size: 2.5rem; /* Smaller title for mobile */
+    }
+
+    .aca .inn {
+        font-size: 1.3rem; /* Smaller text for mobile */
+    }
+}
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.c{
+ 
+   
+    text-align: center;
+    
+    font-size: 4rem;
+    font-family: monospace;
+    background: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.in{
+    color: beige;
+    font-size: 1rem;
+}
+
+
+#academia {
+    padding: 40px;
+    background-color: #000000;
+}
+
+#academia .c {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.aca-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aca {
+    background-color: #e3e6ee29;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    
+  
+}
+
+.aca img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.aca .inn {
+    font-size: 1rem;
+    color: #333;
+}
+
+.aca-header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inn {
+    flex: 2;
+   
+    background:linear-gradient(109.6deg, rgb(3, 195, 187) 11.2%, rgb(180, 196, 255) 91.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 170%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20%;
+    margin-left: 10%;
+}
+
+.aca:hover {
+    box-shadow: 0 0 15px 5px rgb(48, 69, 231);
+}
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.landing-page .content h1, 
+.landing-page .content p {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+
+
+#connect .in {
+    text-align: center;
+    font-size: 1.2em; 
+}
+
+#skill .in {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    border-top: 2px solid #f1f1f1;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    color: #ffa500; 
+}
+
+.footer-content p:nth-child(2)::before,
+.footer-content p:nth-child(3)::before {
+    content: ' '; 
+}
+
+.footer-content p a {
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9em;
+        padding: 15px 0;
+    }
+}
